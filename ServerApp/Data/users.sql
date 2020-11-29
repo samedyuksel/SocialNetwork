@@ -1,0 +1,38 @@
+insert into AspNetUsers(
+        AccessFailedCount,
+        LockoutEnabled,
+        TwoFactorEnabled,
+        EmailConfirmed,
+        PhoneNumberConfirmed,
+        UserName,
+        Email,
+        gender,
+        DateOfBirth,
+        PasswordHash,
+        name,
+        Created,
+        LastActive,
+        Introduction,
+        Hobbies,
+        City,
+        Country
+    )
+VALUES(
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Pratt",
+        "prattcote@equitox.com",
+        "male",
+        "2000-11-14",
+        "SocialApp_123",
+        "Pratt Rath",
+        "2019-04-01",
+        "2019-04-01",
+        "Laborum aute minim Lorem ea occaecat ipsum anim fugiat cupidatat sint elit incididunt eiusmod. Dolore incididunt mollit cilluincididunt irure adipisicing irure culpa tempor reprehenderit quis dolore.",
+        "Fugiat excepteur sint et labore.",
+        "Hondah",
+        "Iran"
+    )

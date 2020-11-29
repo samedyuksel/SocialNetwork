@@ -1,0 +1,97 @@
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="register()">
+        <h2>Register</h2>
+        <hr>
+
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="radioMale" name="gender" #gender="ngModel"
+              [(ngModel)]="model.gender" value="male" required>
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="radioFemale" name="gender" #gender="ngModel"
+              [(ngModel)]="model.gender" value="female" required>
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" required class="form-control" #name="ngModel" [(ngModel)]="model.name" name="name"
+            placeholder="Name">
+          <div class="alert alert-danger" *ngIf="name.invalid && name.touched">
+            <p *ngIf="name.errors.required">Name is required!</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" required class="form-control" #username="ngModel" [(ngModel)]="model.username"
+            name="username" placeholder="User name">
+          <div class="alert alert-danger" *ngIf="username.invalid && username.touched">
+            <p *ngIf="username.errors.required">User name is required!</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" required email class="form-control" #email="ngModel" [(ngModel)]="model.email"
+            name="email" placeholder="Email">
+          <div class="alert alert-danger" *ngIf="email.invalid && email.touched && email.errors.required">
+            <p>Email is required!</p>
+          </div>
+          <div class="alert alert-warning alert-dismissible fade show"
+            *ngIf="email.invalid && email.touched && email.errors.email" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Invalid email!</strong>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="password" required minlength="6" maxlength="15" #password="ngModel" class="form-control"
+            [(ngModel)]="model.password" name="password" placeholder="Password">
+          <div class="alert alert-danger" *ngIf="password.invalid && password.touched">
+            <p *ngIf="password.errors.required">Password is required!</p>
+            <p *ngIf="password.errors.minlength">Password must be at least 6 characters!</p>
+          </div>
+          <div class="alert alert-warning alert-dismissible fade show" role="alert"
+            *ngIf="password.invalid && password.touched">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <p>&diams;Password must be at least 6 characters.</p>
+            <p>&diams;Password must contain at least one uppercase and one lowercase letter and one alphanumeric
+              character.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input #dateofbirth="ngModel" required type="date" [(ngModel)]="model.dateofbirth" name="dateofbirth"
+            class="form-control">
+          <div class="alert alert-danger" *ngIf="dateofbirth.invalid && dateofbirth.touched">
+            <p *ngIf="dateofbirth.errors.required">Date of birth is required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input #country="ngModel" required type="text" [(ngModel)]="model.country" name="country" class="form-control"
+            placeholder="Country">
+          <div class="alert alert-danger" *ngIf="country.invalid && country.touched">
+            <p *ngIf="country.errors.required">Country is required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input #city="ngModel" required type="text" [(ngModel)]="model.city" name="city" class="form-control"
+            placeholder="City">
+          <div class="alert alert-danger" *ngIf="city.invalid && city.touched">
+            <p *ngIf="city.errors.required">City is required</p>
+          </div>
+        </div>
+
+        <button [disabled]="form.invalid" class="btn btn-primary btn-block" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(".alert").alert();
+</script>

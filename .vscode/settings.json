@@ -1,0 +1,75 @@
+{
+    "workbench.colorCustomizations": {
+        "[GitHub Dark]": {
+            "sideBar.border": "#3e4155",
+            "editorLineNumber.foreground": "#6c6985",
+            "statusBar.background": "#0050fc",
+            "statusBarItem.hoverBackground": "#ffffff17",
+            "statusBarItem.activeBackground": "#40378f",
+            "sideBarSectionHeader.background": "#3030304f",
+            "sideBarSectionHeader.border": "#686868"
+        },
+        "[Material Color]": {
+            "sideBar.background": "#292929",
+            "sideBar.border": "#3e4155",
+            "sideBarSectionHeader.background": "#313131",
+            "sideBarSectionHeader.border": "#464646",
+            "editor.lineHighlightBackground": "#2b2b2b",
+            "editor.lineHighlightBorder": "#2b2b2b",
+            "activityBar.background": "#1b173c",
+            "activityBar.activeBackground": "#2f2b4f",
+            "activityBar.foreground": "#ffffff",
+            "activityBar.inactiveForeground": "#bababa",
+            "statusBar.background": "#1b173c"
+        },
+        "[Visual Studio 2019 Light]": {
+            "scrollbarSlider.background": "#3e3875",
+            "scrollbarSlider.hoverBackground": "#362d85",
+            "scrollbarSlider.activeBackground": "#24188d",
+            "editorLineNumber.foreground": "#24188d",
+            "editorLineNumber.activeForeground": "#24188d",
+            "editor.lineHighlightBorder": "#cecece",
+            "statusBar.background": "#24188d",
+            "statusBarItem.hoverBackground": "#2f2b4f",
+            "activityBar.background": "#24188d",
+            "activityBar.activeBackground": "#40378f",
+            "activityBar.border": "#646088",
+            "tab.activeBackground": "#605a91",
+            "tab.activeForeground": "#ffffff",
+            "tab.hoverBackground": "#abaab3",
+            "tab.inactiveForeground": "#24188d",
+            "sideBar.border": "#24188d"
+        },
+        "[Visual Studio 2019 Dark]": {
+            "sideBar.border": "#24188d",
+            "scrollbarSlider.background": "#3e3875",
+            "scrollbarSlider.hoverBackground": "#362d85",
+            "scrollbarSlider.activeBackground": "#24188d",
+            "editorLineNumber.foreground": "#726799",
+            "editorLineNumber.activeForeground": "#6d6d6d",
+            "editor.lineHighlightBackground": "#302f2f",
+            "statusBar.background": "#24188d",
+            "activityBar.background": "#24188d",
+            "activityBar.activeBackground": "#40378f",
+            "titleBar.activeBackground": "#24188d"
+        },
+        "[Material Theme]": {
+            "tab.activeBackground": "#3f3f3f",
+            "tab.activeForeground": "#ffffff",
+            "sideBar.border": "#1e0e46"
+        },
+        "[Slack Theme Aubergine]": {
+            "editor.background": "#f7f7f7"
+        },
+        "[Slack Theme Monument]": {
+            "editor.background": "#f2effd"
+        },
+        "editorGroup.border": "#1f6fd0",
+        "panel.border": "#1f6fd0",
+        "sideBar.border": "#1f6fd0"
+    },
+    "peacock.color": "#1857a4",
+    "cSpell.words": [
+        "alertify"
+    ]
+}

@@ -1,0 +1,19 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Photo Gallery</h5>
+
+    <div class="card-columns">
+      <div class="card" *ngFor="let item of images">
+        <a href="{{item.name}}" data-lightbox="image" data-title="{{item.description}}">
+          <img src="{{item.name}}" #image alt="{{item.description}}" class="card-img-top">
+
+        </a>
+        <div class="card-body">
+          <p class="card-text">{{item.description}}</p>
+          <small class="card-text">{{item.dateAdded | timeago}}</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

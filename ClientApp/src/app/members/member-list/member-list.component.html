@@ -1,0 +1,115 @@
+<ngx-loading [show]="loading"></ngx-loading>
+
+
+<div class="container mt-3">
+  <div class="user-list">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header">
+            Filters by
+          </div>
+          <div class="card-body">
+            <form #form="ngForm" (ngSubmit)="getUsers();">
+              <div class="form-row">
+                <div class="col">
+                  <select name="gender" #gender [(ngModel)]="userParams.gender" class="custom-select custom-select-sm">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col">
+                  <input type="number" #minAge name="minAge" [(ngModel)]="userParams.minAge"
+                    class="form-control form-control-sm" placeholder="Min age">
+                </div>
+                <div class="col">
+                  <input type="number" #maxAge name="maxAge" [(ngModel)]="userParams.maxAge"
+                    class="form-control form-control-sm" placeholder="Max age">
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" #country name="country" [(ngModel)]="userParams.country"
+                    class="form-control form-control-sm" placeholder="Country">
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" #city name="city" [(ngModel)]="userParams.city"
+                    class="form-control form-control-sm" placeholder="City">
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col">
+                  <button type="submit" class="btn btn-outline-danger btn-block btn-sm"
+                    (click)="gender.value='';minAge.value='';maxAge.value='';country.value='';city.value='';removeStorage();refreshStorage();getUsers();">Clear</button>
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn btn-outline-primary btn-block btn-sm"
+                    (click)="setStorage(gender.value,minAge.value,maxAge.value,country.value,city.value);refreshStorage();">Filter</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <div class="card-header">
+            Order by
+          </div>
+          <div class="card-body">
+            <div class="form">
+              <div class="form-row">
+                <div class="col">
+                  <select name="orderby" #orderby [(ngModel)]="userParams.orderby"
+                    (change)="getUsers();order(orderby.value);" class="custom-select custom-select-sm">
+                    <option value="age">Age</option>
+                    <option value="created">Created</option>
+                    <option value="lastactive">Last Active</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="col-md-9">
+
+
+        <div class="row">
+
+          <div *ngFor="let user of users" class="col-lg-4 col-md-4 col-sm-6 col-12">
+
+            <div class="user_profile_info">
+              <div class="user-up-info">
+                <a [routerLink]="['/members/', user.id]">
+                  <img src="{{ user.imageUrl || '../../../../../assets/user.jpg' }}" alt="">
+                </a>
+                <a [routerLink]="['/members/', user.id]">
+                  <h3>{{ user.name }}, <small>{{ user.age }}</small></h3>
+                </a>
+                <h4 style="height: 10px;">{{ user.country }}, {{ user.city }}</h4>
+
+              </div>
+              <a [routerLink]="['/members/', user.id]" class="view-more">View Profile</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

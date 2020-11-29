@@ -1,0 +1,44 @@
+{
+    "workbench.colorCustomizations": {
+        "[Visual Studio 2019 Dark]": {
+            "sideBar.border": "#24188d",
+            "scrollbarSlider.background": "#3e3875",
+            "scrollbarSlider.hoverBackground": "#362d85",
+            "scrollbarSlider.activeBackground": "#24188d",
+            "editorLineNumber.foreground": "#726799",
+            "editorLineNumber.activeForeground": "#6d6d6d",
+            "statusBar.background": "#24188d",
+            "activityBar.background": "#24188d",
+            "activityBar.activeBackground": "#40378f",
+            "editor.lineHighlightBackground": "#302f2f",
+            "titleBar.activeBackground": "#24188d",
+            "tab.activeBackground": "#3a356d"
+        },
+        "[Material Theme]": {
+            "tab.activeBackground": "#3f3f3f",
+            "tab.activeForeground": "#ffffff",
+            "sideBar.border": "#1e0e46"
+        },
+        "[Slack Theme Aubergine]": {
+            "editor.background": "#f7f7f7"
+        },
+        "[Slack Theme Monument]": {
+            "editor.background": "#f2effd"
+        },
+        "activityBar.background": "#412604",
+        "titleBar.activeBackground": "#110a01",
+        "titleBar.activeForeground": "#e7e7e7",
+        "activityBar.activeBackground": "#412604",
+        "activityBar.activeBorder": "#077846",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#077846",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#110a01",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#412604",
+        "titleBar.inactiveBackground": "#110a0199",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#110a01"
+}

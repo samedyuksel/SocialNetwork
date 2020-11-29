@@ -1,0 +1,44 @@
+<div class="container mt-3">
+  <div class="row mb-3">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radioFollowers" name="radioFollows" class="custom-control-input" value="followings"
+              [(ngModel)]="followParams" (change)="getUsers()">
+            <label class="custom-control-label" for="radioFollowers">Followings</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radioFollowings" name="radioFollows" class="custom-control-input" value="followers"
+              [(ngModel)]="followParams" (change)="getUsers()">
+            <label class="custom-control-label" for="radioFollowings">Followers</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="user-list">
+    <div class="row">
+      <div *ngFor="let user of users" class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="user_profile_info">
+          <div class="user-up-info">
+
+            <a href="{{user.imageUrl || '../../../../../assets/user.jpg'}}" data-lightbox="image"
+              data-title="{{user.name}}">
+              <img src="{{ user.imageUrl || '../../../../../assets/user.jpg'}}" alt="">
+            </a>
+            <h3>{{ user.name }}, <small>{{ user.age }}</small></h3>
+            <h4 style="height: 20px;">{{ user.country }}, {{ user.city }}</h4>
+            <button class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-plus"></i>
+              Add Friend
+            </button>
+          </div>
+          <a [routerLink]="['/members/',user.id]" class="view-more">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

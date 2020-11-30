@@ -20,7 +20,7 @@
  ![](src/orderBy.gif)
 
 
- ![](src/Responsive.gif)
+ ![](src/responsive.gif)
 
 
 

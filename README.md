@@ -2,9 +2,26 @@
 
  I developed the backend side using .Net Core 3.1 and on the frontend I used Angular 9.
 
-* This page is where all users are viewed after authorization. Filtering can be done from the left side. You can order by age, creation date or last seen date.
- ![img](src/1.jpg)
+* The Register Page.
+ ![](src/register.gif)
+ ![](src/jwt.gif)
+
+* This page is where all users are viewed after authorization.
+ ![](src/1.JPG)
 
 * This one is the user's detailed page
- ![img](src/2.jpg)
+ ![](src/2.JPG)
+ ![](src/detail.gif)
+
+* Filtering can be done from the left side.
+ ![](src/filter.gif)
+
+* You can order by age, creation date or last seen date.
+ ![](src/orderBy.gif)
+
+
+ ![](src/Responsive.gif)
+
+
+
 

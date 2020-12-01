@@ -9,7 +9,7 @@
 #### This page is where all users are viewed after authorization.
  ![](src/1.JPG)
 
-#### This one is the user's detailed page..
+#### This one is the user's detailed page.
  ![](src/2.JPG)
  ![](src/detail.gif)
 

@@ -4,7 +4,6 @@
 
 #### The Register Page.
  ![](src/register.gif)
- ![](src/jwt.gif)
 
 #### This page is where all users are viewed after authorization.
  ![](src/1.JPG)

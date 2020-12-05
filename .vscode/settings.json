@@ -47,11 +47,7 @@
             "scrollbarSlider.activeBackground": "#24188d",
             "editorLineNumber.foreground": "#726799",
             "editorLineNumber.activeForeground": "#6d6d6d",
-            "editor.lineHighlightBackground": "#302f2f",
-            "statusBar.background": "#24188d",
-            "activityBar.background": "#24188d",
-            "activityBar.activeBackground": "#40378f",
-            "titleBar.activeBackground": "#24188d"
+            "editor.lineHighlightBackground": "#302f2f"
         },
         "[Material Theme]": {
             "tab.activeBackground": "#3f3f3f",
@@ -64,12 +60,8 @@
         "[Slack Theme Monument]": {
             "editor.background": "#f2effd"
         },
-        "editorGroup.border": "#1f6fd0",
-        "panel.border": "#1f6fd0",
-        "sideBar.border": "#1f6fd0"
-    },
-    "peacock.color": "#1857a4",
-    "cSpell.words": [
-        "alertify"
-    ]
+        "activityBar.background": "#11332B",
+        "titleBar.activeBackground": "#18473C",
+        "titleBar.activeForeground": "#F6FCFA"
+    }
 }

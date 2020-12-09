@@ -22,7 +22,7 @@
  ![](src/orderBy.gif)
 
 
- ![](src/responsive.gif)
+ ![](src/responsive.gif).
 
 
 
